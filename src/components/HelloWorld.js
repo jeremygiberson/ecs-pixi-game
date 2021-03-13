@@ -1,4 +1,5 @@
 import {getPost} from 'api';
+import * as PIXI from 'pixi.js'
 
 async function HelloWorld() {
     const div = document.createElement('div');
@@ -19,6 +20,12 @@ async function HelloWorld() {
 
     p.appendChild(pText);
     div.appendChild(p);
+
+    const app = new PIXI.Application();
+
+// The application will create a canvas element for you that you
+// can then insert into the DOM.
+    document.body.appendChild(app.view);
 }
 
 export default HelloWorld;
