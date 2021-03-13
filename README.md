@@ -81,19 +81,15 @@ class ColliderSystem extends ApeECS.System {
 * patterns to use instead of ECS https://www.youtube.com/watch?v=JxI3Eu5DPwE
 
 #  webpack-babel-boilerplate
+Thanks to https://github.com/sweetcoco/webpack-babel-boilerplate.git for providing a simple (and great) boiler plate to get dev-ing. 
 ES6 with polyfill for async await, Webpack, dev server with hot-module-reloading. Spicy 🔥
 
-## Install
+## Dev
 ```
-git clone https://github.com/sweetcoco/webpack-babel-boilerplate.git your-app # change your-app to the name of your project
-cd your-app
-git remote remove origin
-# edit the package.json, then continue on
-npm install
-npm run dev
+yarn run dev
 ```
 
 ## Build for prod
 ```
-npm run build
+yarn run build
 ```
